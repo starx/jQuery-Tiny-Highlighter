@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+            <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />	
+            <title>jQuery Tiny Highlighter - An extremely tiny syntax highlighter plugin</title>	            
+            <meta name="description" content="An stylish and elegant but extremely light code and syntax highlighter">
+            <meta name="keywords" content="javascript, jquery, code, syntax, highlighter, light, lightweight">
+            <meta name="author" content="Nabin Nepal - St@rx">            
+            <META NAME="robots" CONTENT="index,follow">
+            <link rel='stylesheet' type='text/css' href='css/style.css' />			
+            <link rel='stylesheet' type='text/css' href='css/tinyhighlighter.css' />			            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src='js/jquery.tinyhighlighter.js'></script>
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+        	<header>
+            	<nav id="mainNavigation">
+                	<ul>
+                    	<li>
+                        	<a href="http://mrnepal.com">main</a>
+                        </li>
+                    	<li>
+                        	<a href="http://projects.mrnepal.com">projects</a>
+                        </li>                        
+                    </ul>
+                </nav>
+            </header>
+            <section class="main description">
+                <header>
+                    <h1> jQuery Tiny Highlighter</h1>
+                </header>
+
+                <p>
+                    An extremely lightweight plugin to hightlight code in your page for generic purposes.
+                </p>
+            </section>
+
+            <section class="description">
+                <header>
+                    <h2>Quick Look</h2>
+                </header>
+                <div>
+                    <p>Here is how this plugins looks on the defaults options. You can fully customize it the want you want. Happy decorating :)
+                    <script>
+                        $(function() {	$("#demo-1 pre code, .hilite").tinyHighlighter(); });
+                    </script>
+                    
+                    <div id="demo-1">
+                        <pre><code>
+$totalPost = 50; //Dummy total post
+$limit = 10;
+
+$pages = $totalPost / $limit; //Giving 5
+
+//Now we know there are five pages
+for($i=1; $i&lt;=$pages; $i++) {
+	echo $i; // Better echo something like &lt;a href="link"&gt;$i&lt;/a&gt;
+}
+						</code></pre>
+                    </div>					
+                </div>
+            </section>
+
+            <section class="description contentColumns">
+            	<div class="main">
+                	<section class="contentColumn">
+                        <header>
+							<hgroup>
+								<h2>How to use?</h2>
+								<h3>It is so easy</h3>
+                            </hgroup>
+                        </header>
+        
+                        <p>
+							<pre class="hilite"><code>$('#container').tinyHighlighter();</code></pre>                            
+                        </p>
+                    </section>
+				</div>
+                <div class="side">
+	                <section class="contentColumn">
+                        <header>
+                            <h2>Try it already</h2>
+                        </header>
+        
+                        <p>
+                            <a class="button" href="https://github.com/starx/jQuery-Fancy-Menu/zipball/master" target="_blank">Download</a>
+                        </p>  
+                    </section>
+                    
+                    <section class="contentColumn">
+                        <header>
+                            <h2>Like it? support me :)</h2>
+                        </header>
+        
+                        <p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                <input type="hidden" name="cmd" value="_s-xclick" />
+                                <input type="hidden" name="hosted_button_id" value="Q5TU5NVWRQW9L" />
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" style="border:none;" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                                <img alt="" style="border: none;" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                            </form>                                
+                        </p>
+                    </section>
+              
+                </div>
+            </section>
+        </div>
+
+    </body>
+
+</html>
