@@ -1,0 +1,36 @@
+ul.tinyhighlighter {
+    padding: 0;
+    clear: both;
+    list-style: none;
+    background: #fff;
+    border: 1px #ddd solid;
+}
+ul.tinyhighlighter li { cursor: pointer; }
+ul.tinyhighlighter li span { padding: 5px; }
+ul.tinyhighlighter li span:not(.no) { cursor: text; }
+ul.tinyhighlighter li pre {
+    display: inline-block;
+    font-size: 10px;
+    margin: 0 0 0 10px;
+}
+
+ul.tinyhighlighter li .no::selection { background: trasnparent; }
+ul.tinyhighlighter li .no::-moz-selection  { background: transparent; }
+ul.tinyhighlighter li .no::-webkit-selection  { background: transparent; }
+
+ul.tinyhighlighter li .no {
+    display: inline-block;
+    width: 20px;
+    
+    background: #ccc;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul.tinyhighlighter li:nth-child(2n+1) { background: rgb(245,245,245); }
+ul.tinyhighlighter li:hover { background: #222; }
+ul.tinyhighlighter li:hover span.no { background: #000; color: #ff0; }
+ul.tinyhighlighter li:hover pre { color: #fff; }
